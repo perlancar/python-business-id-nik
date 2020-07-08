@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(name='business_id_nik',
       version='0.93.0',
-      url='https://github.com/perlancar/python-business-id-nik',
+      url='https://github.com/perlancar/python-business_id_nik',
       license='MIT',
       author='perlancar',
       author_email='perlancar@gmail.com',
@@ -21,7 +21,8 @@ setup(name='business_id_nik',
           'Programming Language :: Python :: Implementation :: CPython',
       ],
       keywords='indonesia',
-      packages=find_packages(exclude=['tests']),
+      #packages=find_packages(exclude=['test']),
+      packages=['business_id_nik'],
       long_description=open('README.md').read(),
       # setuptools > 38.6.0 needed for markdown README.md
       setup_requires=['setuptools>=38.6.0'],
